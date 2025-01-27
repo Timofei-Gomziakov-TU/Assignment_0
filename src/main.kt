@@ -26,10 +26,17 @@ fun main(args: Array<String>){
     val squareHeight = reader.nextDouble();
     (square as Square).setDimensions(squareHeight, squareLength);
 
+    // equil. triangle inputs
+    val equilTriangle : EquilateralTriangle = EquilateralTriangle("EquilateralTriangle");
+    println("Enter equilateral triangle sides: ");
+    val equilTriangleSide = reader.nextDouble();
+    (equilTriangle as EquilateralTriangle).setDimensions(equilTriangleSide);
+
 
     printData(square);
     printData(circle);
     printData(triangle);
+    printData(equilTriangle);
 }
 
 // the function that prints the separator
